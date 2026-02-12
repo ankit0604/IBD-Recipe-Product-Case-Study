@@ -2,9 +2,9 @@
 
 ---
 
-## 📌 Problem Statement
+## 1. Problem Statement
 
-The members of the non-profit organization want to introduce a new section called **“Recipe”** on their website.  
+The members of the non-profit organization want to introduce a new section called "Recipe" on their website.
 
 This feature aims to help the IBD (Inflammatory Bowel Disease) community cook recipes based on dietary preferences while also allowing contributors (Doctors, Nutritionists, Experts) to submit relevant recipes.
 
@@ -12,10 +12,10 @@ Currently, patients are redirected to external websites, blogs, or printed mater
 
 ---
 
-## 🎯 Product Name & Primary Goals
+## 2. Product Name and Primary Goals
 
 ### Product Name
-**Recipe**
+Recipe
 
 ### Primary Goals
 
@@ -26,16 +26,16 @@ Currently, patients are redirected to external websites, blogs, or printed mater
 
 ---
 
-## 👥 Target Users
+## 3. Target Users
 
-- **Patient** – Looking for recipes to manage symptoms.
-- **Caregiver** – Searching for recipes on behalf of patients.
-- **Contributor** (Doctor, Nutritionist, Expert) – Submitting verified recipes.
-- **Admin** – Reviewing and approving submitted recipes.
+- Patient – Looking for recipes to manage symptoms.
+- Caregiver – Searching for recipes on behalf of patients.
+- Contributor (Doctor, Nutritionist, Expert) – Submitting verified recipes.
+- Admin – Reviewing and approving submitted recipes.
 
 ---
 
-## 💎 Unique Value Proposition
+## 4. Unique Value Proposition
 
 - Customized ingredient and diet-based recipe suggestions.
 - Nutritional calculation per serving.
@@ -44,72 +44,58 @@ Currently, patients are redirected to external websites, blogs, or printed mater
 
 ---
 
-## 📢 Channels for Promotion
-
-- Online campaigns
-- Pop-up notifications
-- Promotional emails
-- Release notes
-
----
-
-## 📂 Assumptions & Scope
+## 5. Assumptions and Scope
 
 ### Current State (AS-IS)
 
 - Patients rely on external websites or printed materials.
 - No centralized digital recipe repository.
-- Printed materials cannot be emailed or distributed digitally.
+- No structured moderation or engagement tracking.
+
+### In Scope
+
+- Recipe submission form
+- Instructions and video support
+- Diet-based filtering
+- Nutritional calculator (basic)
+- Admin approval workflow
+- Rating and feedback
+
+### Out of Scope
+
+- User registration/authentication (users assumed registered)
+- AI-based personalization
+- Payment or monetization features
 
 ---
 
-### In-Scope
+## 6. Future State (TO-BE)
 
-- Recipe submission form.
-- Instructions + video support.
-- Diet-based filtering.
-- Nutritional calculator (basic).
-- Admin approval workflow.
-- Rating & feedback.
-
----
-
-### Out-of-Scope
-
-- User registration/authentication (users are assumed to be registered).
-- Advanced AI-based personalization.
-- Payment or monetization features.
-
----
-
-## 🔄 AS-IS Workflow (Current State)
-
-1. Patient requests recipe guidance.
-2. Provider refers to external websites or printed materials.
-3. No digital feedback or moderation mechanism.
-4. No centralized tracking or engagement metrics.
-
----
-
-## 🚀 TO-BE Workflow (Future State)
+### Patient Flow
 
 1. Patient logs into website.
 2. Navigates to Recipe section.
 3. Applies diet filters.
-4. Views personalized recipes.
-5. Provides rating/feedback.
+4. Views recipe details.
+5. Provides rating and feedback.
 
-For Contributors:
+### Contributor Flow
 
 1. Contributor logs in.
 2. Clicks “Submit New Recipe.”
-3. Fills structured form.
-4. Recipe auto-publishes (if privileged) OR goes to Admin review.
-5. Admin approves/rejects.
+3. Completes recipe form.
+4. Recipe auto-publishes (if privileged) or goes for Admin approval.
+
+### Admin Flow
+
+1. Admin logs into dashboard.
+2. Reviews pending recipes.
+3. Approves or rejects submissions.
+4. System sends notification to contributor.
 
 ---
 
-## 🧩 Actors & Use Cases
+## 7. Actors and Use Cases
 
 ### Actors
 
@@ -123,50 +109,46 @@ For Contributors:
 - Submit Recipe
 - Filter Recipe
 - View Recipe
-- Provide Rating & Feedback
-- Approve/Reject Recipe
-- View Dashboard Metrics
+- Provide Rating and Feedback
+- Approve or Reject Recipe
+- View Usage Dashboard
 
 ---
 
-# 📋 Product Backlog (High-Level)
+## 8. Product Backlog (High Level)
 
 - Submit new recipe
 - Role identification
-- Recipe form (Required + Optional fields)
+- Recipe form (required and optional fields)
 - Diet-based filters
-- Feedback & star ratings
+- Feedback and star ratings
 - Save user preferences
-- Admin approval process
-- Notification emails
+- Admin approval workflow
+- Email notifications
 - Usage dashboard
 
 ---
 
-# 📝 User Stories & Acceptance Criteria
+## 9. User Stories and Acceptance Criteria
 
----
+### Submit New Recipe
 
-## 1️⃣ Submit New Recipe Button
-
-### User Story
+User Story:
 As a Patient, I want to click on “Submit New Recipe” so that I can submit recipes for review.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given the patient is logged in  
 When the patient clicks “Submit New Recipe”  
 Then the New Recipe Form is displayed  
 
 ---
 
-## 2️⃣ Identify User Type
+### Identify User Type
 
-### User Story
+User Story:
 As an Admin, I want the system to identify the type of user submitting a recipe so that approval rules are applied correctly.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given user selects role  
 When recipe is submitted  
 Then role is stored  
@@ -175,19 +157,18 @@ Given role = Doctor (privileged)
 When submitted  
 Then recipe auto-publishes  
 
-Given role = Patient/Caregiver  
+Given role = Patient or Caregiver  
 When submitted  
 Then recipe goes to Admin review  
 
 ---
 
-## 3️⃣ Mandatory Fields Validation
+### Mandatory Fields Validation
 
-### User Story
+User Story:
 As a Contributor, I want mandatory fields enforced so that complete recipes are submitted.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given mandatory fields are empty  
 When user clicks submit  
 Then submit button remains disabled  
@@ -198,26 +179,24 @@ Then recipe is saved successfully
 
 ---
 
-## 4️⃣ Filter Recipes by Diet
+### Filter Recipes by Diet
 
-### User Story
+User Story:
 As a Patient, I want to filter recipes by diet type so that I can easily find suitable meals.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given patient selects Low-Fiber  
 When filter is applied  
 Then only Low-Fiber recipes are displayed  
 
 ---
 
-## 5️⃣ Rating & Feedback
+### Rating and Feedback
 
-### User Story
+User Story:
 As a Patient, I want to rate and review recipes so that others can benefit.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given rating selected (1–5)  
 When submitted  
 Then rating is stored and displayed  
@@ -228,26 +207,12 @@ Then validation error appears
 
 ---
 
-## 6️⃣ Save Preferences
+### Admin Approval Workflow
 
-### User Story
-As a Patient, I want to save diet preferences so that I don’t reselect filters every time.
-
-### Acceptance Criteria
-
-Given user selects filters  
-When “Save Preferences” is clicked  
-Then preferences are saved in profile  
-
----
-
-## 7️⃣ Admin Approval Workflow
-
-### User Story
+User Story:
 As an Admin, I want to approve or reject submitted recipes so that only verified content is published.
 
-### Acceptance Criteria
-
+Acceptance Criteria:
 Given recipe is pending  
 When Admin approves  
 Then recipe becomes visible  
@@ -258,39 +223,39 @@ Then contributor receives notification
 
 ---
 
-# 🧪 MVP Definition
+## 10. MVP Definition
 
 The Minimum Viable Product includes:
 
 - Recipe submission form
 - Diet filter functionality
 - Admin approval workflow
-- Rating & feedback
+- Rating and feedback
 - Basic nutritional calculator
 
 ---
 
-# ⚙️ Non-Functional Requirements
+## 11. Non-Functional Requirements
 
-- Page load time < 3 seconds
+- Page load time less than 3 seconds
 - Role-based access control
-- 99% system uptime
-- Secure data handling (HIPAA aligned)
+- Secure data handling
 - Scalable for high content volume
+- 99% system uptime
 
 ---
 
-# 📊 Success Metrics (KPIs)
+## 12. Success Metrics (KPIs)
 
 - Number of recipes submitted per month
 - Recipe approval rate
-- User engagement (ratings & feedback)
+- User engagement (ratings and feedback)
 - Reduction in external referrals
 - Repeat visits
 
 ---
 
-# ⚠️ Risks & Dependencies
+## 13. Risks and Dependencies
 
 - Accuracy of nutritional calculation
 - Admin moderation workload
@@ -299,10 +264,7 @@ The Minimum Viable Product includes:
 
 ---
 
-# ✅ Final Conclusion
+## 14. Final Conclusion
 
 The Recipe feature centralizes dietary resources for IBD patients while enabling structured community contribution.
-
 By implementing role-based submission, approval workflow, personalized filtering, and engagement tracking, the platform evolves into a scalable and trusted dietary support system.
-
----
