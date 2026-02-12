@@ -91,7 +91,7 @@ The members of the non-profit organization want to introduce a section called **
 Patient → Searches external sites → Finds recipe → No personalization → No feedback loop
 
 ## AS-IS Workflow
-![AS-IS Workflow](diagrams/AS-IS.png)
+![AS-IS Workflow](Diagrams/AS-IS.png)
 
 ### TO-BE Workflow (Future State)
 User logs in → Filters by diet → Views personalized recipes → Submits/rates/feedback → Admin approves → Content published
