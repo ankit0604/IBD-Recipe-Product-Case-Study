@@ -90,27 +90,17 @@ The members of the non-profit organization want to introduce a section called **
 ### AS-IS Workflow (Current State)
 Patient → Searches external sites → Finds recipe → No personalization → No feedback loop
 
-text
-
 ### TO-BE Workflow (Future State)
 User logs in → Filters by diet → Views personalized recipes → Submits/rates/feedback → Admin approves → Content published
-
-text
 
 ### High-Level End-to-End Workflow
 Contributor submits recipe → System identifies role → Auto-publish (if privileged) / Admin Approval → Recipe visible → Patient filters & views → Rates & feedback
 
-text
-
 ### Patient Workflow (High Level)
 Login → Apply diet filters → Browse recipes → View recipe & nutrition → Rate / Share / Save
 
-text
-
 ### Admin Workflow (High Level)
 Login → View pending recipes → Approve/Reject → Send notification → Monitor dashboard
-
-text
 
 ---
 
@@ -164,8 +154,6 @@ text
 
 ## 📝 User Story Format
 As a <USER>, I want <FUNCTIONALITY> so that <JUSTIFICATION>
-
-text
 
 ### Example
 
@@ -329,7 +317,7 @@ As an Admin, I want to review submitted recipes so that only safe and verified c
 
 ## 🏁 Final Conclusion
 
-The **Recipe** feature enables the organization to **centralize dietary resources** for IBD patients while **fostering community engagement**.
+The **Recipe** feature enables the organization to **centralize dietary resources** for IBD patients while **promoting community engagement**.
 
 By introducing **role-based content submission**, **structured approval workflow**, and **personalized filtering**, the platform becomes a **trusted and scalable solution** for patient-focused dietary support.
 
